@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheet/Pokemon.css";
+import "../stylesheet/Pokemon.scss";
 
 function Pokemon(props) {
   const types = props.pokemon.types;
@@ -16,6 +16,9 @@ function Pokemon(props) {
           );
         })}
       </ul>
+      <div className="circle">
+        <div className="little-circle"></div>
+      </div>
     </li>
   );
 }
