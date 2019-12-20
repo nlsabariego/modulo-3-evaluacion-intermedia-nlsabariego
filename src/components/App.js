@@ -13,6 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>Mi lista de Pokemons</h1>
         <PokeList>
           {this.state.pokemons.map(function(pokemon) {
             return <Pokemon pokemon={pokemon} key={pokemon.id} />;
